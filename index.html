@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>tp1</title>
+</head>
+<body>  
+    <div class="container">
+        <div>
+            <div>
+                <input type="number" id="matematica" name="matematica" placeholder="Matematica" oninput="validarInput('matematica', 'errorMatematica')">
+                <label id="errorMatematica"> </label>
+    
+                <input type="number" id="lengua" name="lengua" placeholder="lengua" oninput="validarInput('lengua', 'errorLengua')">
+                <label id="errorLengua"> </label>
+    
+                <input type="number" id="efsi" name="efsi" placeholder="Efsi" oninput="validarInput('efsi', 'errorEfsi')"> 
+                <label id="errorEfsi"> </label>
+    
+            </div>
+            <div id="respuestas">
+        
+            </div>
+            <div>
+                <p id="error"></p>
+                <button onclick="calcularPromedio()" id="calcularPromedio">Calcular promedio"</button>
+                <button onclick="calcularNota()" id="calcularNota">Mayor nota</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
