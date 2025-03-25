@@ -31,7 +31,7 @@ function validarNotas()
             continue
         }
 
-        if((parseInt(aux[i].value) < 0 || parseInt(aux[i].value) > 10) && parseInt(aux[i].value) != isNaN)
+        if(parseInt(aux[i].value) < 1 || parseInt(aux[i].value) > 10)
         {
             aux[i].classList.add("rojo")
             error.innerText = "los datos son invalidos"
@@ -59,7 +59,7 @@ const validarInput = (id, idLabel) =>
         auxLabel.innerText = ""
     }
 
-    if(aux.value < 0 || aux.value > 10)
+    if(aux.value < 1 || aux.value > 10)
     {
         aux.classList.add("rojo")
         aux.classList.remove("verde")
